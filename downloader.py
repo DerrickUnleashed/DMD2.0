@@ -198,6 +198,7 @@ else:
     # Combine features and target into single DataFrame
     combined_df = X_all.copy()
     combined_df['target'] = y_all
+    combined_df.fillna(0, inplace=True)
     
     print(f"Combined shape: {combined_df.shape}")
     print("Target distribution:\n", combined_df['target'].value_counts())
