@@ -1,0 +1,11 @@
+venv
+.DS_Store
+GSE1007_family.soft.gz          
+GSE3307_family.soft.gz          
+GSE6011_family.soft.gz          
+GSE13608_family.soft.gz         
+GSE38417_family.soft.gz        
+GSE1004_family.soft.gz          
+GSE1764_family.soft.gz          
+GSE465_family.soft.gz
+test.py
