@@ -1,5 +1,6 @@
 """
 Datasets to use : GSE38417, GSE6011, GSE1764, GSE1007, GSE1004, GSE465 - Only DMD and Control
+Datasets to use : GSE3307, GSE13608 - with Other Disorders Dropped
 """
 
 import GEOparse
@@ -8,7 +9,7 @@ import numpy as np
 import os
 from collections import defaultdict
 
-SERIES_LIST = ["GSE38417", "GSE6011", "GSE1764", "GSE1007", "GSE1004", "GSE465" ]
+SERIES_LIST = ["GSE38417", "GSE6011", "GSE1764", "GSE1007", "GSE1004", "GSE465", "GSE3307", "GSE13608" ]
 DEST_DIR    = "."
 OUTPUT_FILE = "DMD_combined_dataset.csv"
 
