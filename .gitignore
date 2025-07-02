@@ -9,3 +9,4 @@ GSE1004_family.soft.gz
 GSE1764_family.soft.gz          
 GSE465_family.soft.gz
 test.py
+__pycache__
