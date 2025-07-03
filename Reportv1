@@ -1,0 +1,185 @@
+==================================================
+Model : Random Forest
+==================================================
+Features shape: (310, 1581)
+Labels shape: (310,)
+
+Label distribution:
+ target
+1    181
+0    129
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (248, 1581)
+  X_test shape: (62, 1581)
+  y_train distribution:
+ target
+1    145
+0    103
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    36
+0    26
+Name: count, dtype: int64
+
+Random Forest Classification Results:
+Accuracy: 0.9193548387096774
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       0.92      0.88      0.90        26
+         DMD       0.92      0.94      0.93        36
+
+    accuracy                           0.92        62
+   macro avg       0.92      0.91      0.92        62
+weighted avg       0.92      0.92      0.92        62
+
+Confusion Matrix:
+ [[23  3]
+ [ 2 34]]
+AUC-ROC Score: 0.9145299145299145
+Jaccard Score: 0.8717948717948718
+Precision-Recall AUC: 0.9903042349868032
+Matthews Correlation Coefficient: 0.8339748050834482
+Cohen's Kappa: 0.8335123523093448
+Log Loss: 0.33536035132044567
+
+Top 10 Most Important Features:
+feature  importance
+   ACTB    0.085160
+  GAPDH    0.084372
+   TFRC    0.078142
+  STAT1    0.076854
+   CBX3    0.014626
+ HNRNPC    0.013566
+    YY1    0.013187
+ TARDBP    0.011548
+ STARD7    0.010819
+  SART1    0.009884
+
+==================================================
+Model : XGBoost
+==================================================
+Features shape: (310, 1581)
+Labels shape: (310,)
+
+Label distribution:
+ target
+1    181
+0    129
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (248, 1581)
+  X_test shape: (62, 1581)
+  y_train distribution:
+ target
+1    145
+0    103
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    36
+0    26
+Name: count, dtype: int64
+
+XGBoost Classification Results (Best Model):
+Accuracy: 0.9354838709677419
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       0.96      0.88      0.92        26
+         DMD       0.92      0.97      0.95        36
+
+    accuracy                           0.94        62
+   macro avg       0.94      0.93      0.93        62
+weighted avg       0.94      0.94      0.94        62
+
+Confusion Matrix:
+ [[23  3]
+ [ 1 35]]
+AUC-ROC Score: 0.9807692307692307
+Jaccard Score: 0.8974358974358975
+Precision-Recall AUC: 0.9890552457219124
+Matthews Correlation Coefficient: 0.868038573832994
+Cohen's Kappa: 0.8660907127429806
+Log Loss: 0.18322332493062418
+
+Top 10 Most Important Features:
+feature  importance
+  PHTF2    0.118936
+    IDE    0.066957
+  CPSF6    0.057858
+   SVIL    0.056361
+    TNC    0.053375
+  SIVA1    0.032560
+ ATP1B3    0.030773
+  TTLL5    0.028645
+   VCAN    0.028262
+SLC30A4    0.027053
+
+==================================================
+Model : LightGBM
+==================================================
+Features shape: (310, 1581)
+Labels shape: (310,)
+
+Label distribution:
+ target
+1    181
+0    129
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (248, 1581)
+  X_test shape: (62, 1581)
+  y_train distribution:
+ target
+1    145
+0    103
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    36
+0    26
+Name: count, dtype: int64
+
+LightGBM Classification Results (Best Model):
+Accuracy: 0.9354838709677419
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       0.96      0.88      0.92        26
+         DMD       0.92      0.97      0.95        36
+
+    accuracy                           0.94        62
+   macro avg       0.94      0.93      0.93        62
+weighted avg       0.94      0.94      0.94        62
+
+Confusion Matrix:
+ [[23  3]
+ [ 1 35]]
+AUC-ROC Score: 0.969017094017094
+Jaccard Score: 0.8974358974358975
+Precision-Recall AUC: 0.9772483885507872
+Matthews Correlation Coefficient: 0.868038573832994
+Cohen's Kappa: 0.8660907127429806
+Log Loss: 0.22838201547025522
+
+Top 10 Most Important Features:
+feature  importance
+  GAPDH         158
+   TFRC         152
+  STAT1         145
+   ACTB         130
+ ATP1B3          31
+  MNAT1          24
+ HNRNPC          22
+    YY1          19
+   CBX3          19
+  SART1          19
