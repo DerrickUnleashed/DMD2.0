@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import xgboost as xgb
 
 # Load the dataset
-df = pd.read_csv("DMD_combined_dataset.csv", index_col=False)
+df = pd.read_csv("DMD_combined_dataset_without_Control.csv", index_col=False)
 
 # Step 1: Load the features and labels
 X = df.iloc[:, :-1]

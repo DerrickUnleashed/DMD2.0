@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_auc_score, jaccard_score, precision_recall_curve, matthews_corrcoef, cohen_kappa_score, log_loss, auc
 
 
-df = pd.read_csv("DMD_combined_dataset.csv", index_col=False)
+df = pd.read_csv("DMD_combined_dataset_without_Control.csv", index_col=False)
 # Step 1: Load the features and labels
 X = df.iloc[:, :-1]
 X = X.drop(columns=["Unnamed: 0"],axis=1)
