@@ -47,18 +47,28 @@ Matthews Correlation Coefficient: 0.7698121079195692
 Cohen's Kappa: 0.769394261424017
 Log Loss: 0.34776643520382755
 
-Top 10 Most Important Features:
-feature  importance
-   TFRC    0.156249
-  STAT1    0.148375
-   CBX3    0.017919
-    YY1    0.012300
- HNRNPC    0.012168
-   FNTA    0.012119
-  SART1    0.011339
-  TAF10    0.010473
- TARDBP    0.010168
-   VCAN    0.009864
+Top 20 Most Important Features:
+ feature  importance
+    TFRC    0.156249
+   STAT1    0.148375
+    CBX3    0.017919
+     YY1    0.012300
+  HNRNPC    0.012168
+    FNTA    0.012119
+   SART1    0.011339
+   TAF10    0.010473
+  TARDBP    0.010168
+    VCAN    0.009864
+C11orf58    0.008857
+   THBS2    0.008706
+  STARD7    0.008568
+  ATP1B3    0.008173
+   GLUD1    0.007011
+  COL1A2    0.006593
+     MGP    0.006483
+     TNC    0.006350
+   MXRA5    0.004964
+   FKBP5    0.004902
 
 ==================================================
 Model : XGBoost
@@ -109,7 +119,7 @@ Matthews Correlation Coefficient: 0.7350427350427351
 Cohen's Kappa: 0.7350427350427351
 Log Loss: 0.3423140463352765
 
-Top 10 Most Important Features:
+Top 20 Most Important Features:
 feature  importance
     IDE    0.092969
    SVIL    0.092698
@@ -121,6 +131,16 @@ feature  importance
    FXR2    0.030236
   CPSF6    0.028200
   TTLL5    0.025420
+ ATP1B3    0.024389
+   STC2    0.022948
+  PHTF2    0.020935
+   VCAN    0.019975
+  ABCB8    0.019643
+ PHLDA1    0.019282
+PPP2R1B    0.018981
+ CACNG1    0.015855
+SLC30A4    0.015788
+   WWP1    0.015690
 
 ==================================================
 Model : LightGBM
@@ -171,7 +191,7 @@ Matthews Correlation Coefficient: 0.805113657286459
 Cohen's Kappa: 0.8033826638477801
 Log Loss: 0.2654682846734135
 
-Top 10 Most Important Features:
+Top 20 Most Important Features:
 feature  importance
   STAT1         281
    TFRC         235
@@ -183,3 +203,13 @@ feature  importance
    VCAN          20
     YY1          17
     IDE          14
+ STARD7          11
+ TARDBP          11
+  CEBPB           9
+  GLUD1           9
+  TAF10           9
+  MXRA5           8
+    TNC           6
+  GPM6B           5
+   FNTA           5
+   FECH           5

@@ -77,10 +77,10 @@ print("Log Loss:", loss)
 feature_importance = model.feature_importances_
 feature_names = X.columns
 
-print("\nTop 10 Most Important Features:")
+print("\nTop 20 Most Important Features:")
 importance_df = pd.DataFrame({
     'feature': feature_names,
     'importance': feature_importance
 }).sort_values('importance', ascending=False)
 
-print(importance_df.head(10).to_string(index=False))
+print(importance_df.head(20).to_string(index=False))
