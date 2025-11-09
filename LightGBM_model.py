@@ -93,3 +93,25 @@ importance_df = pd.DataFrame({
 }).sort_values('importance', ascending=False)
 
 print(importance_df.head(20).to_string(index=False))
+
+import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve, auc
+
+# Compute ROC curve and AUC
+fpr, tpr, thresholds = roc_curve(y_test, y_prob)
+roc_auc = auc(fpr, tpr)
+
+# Plot ROC Curve
+plt.figure(figsize=(8, 6))
+plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC Curve (AUC = {roc_auc:.3f})')
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--', label='Random Classifier')
+
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('False Positive Rate', fontsize=12)
+plt.ylabel('True Positive Rate', fontsize=12)
+plt.title('LightGBM ROC Curve for DMD', fontsize=14)
+plt.legend(loc='lower right')
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.savefig("DMD_model_validation.png", dpi=400)
+plt.show()
